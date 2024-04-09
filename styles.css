@@ -16,20 +16,26 @@ body {
       "footer footer";
     gap: 20px;
     background-color: #fff;
-    padding: 40px;
+    padding: 80px;
     margin: 40px auto;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     max-width: 1024px;
-    border-radius: 16%
+    border-radius: 10px;
   }
   
   header {
     grid-area: header;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 90%;
     text-decoration-line: underline;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-style:outset;
+    border-width: 6px;
+    border-color: green;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 25px;
+    font-size: larger;
+
   }
   
   .details {
@@ -37,15 +43,16 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
-    border-top: 2fr green;
     border-style: dashed;
   }
   
   .profile {
     grid-area: profile;
-    background-color: #f9f9f9;
+    background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
+    border-right: green 5px solid;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   }
   
   .skills {
@@ -53,6 +60,8 @@ body {
     background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
+    border-right: green 5px solid;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   }
   
   .employment-history {
@@ -60,6 +69,8 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
+    border-right: green 5px solid;
+    border-style: dashed;
   }
   
   .hobbies {
@@ -67,13 +78,16 @@ body {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
+    border-style: dashed;
   }
   
   .education {
     grid-area: education;
-    background-color: #f9f9f9;
+    background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
+    border-right: green 5px solid;
+       box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   }
   footer{ 
     grid-area: footer;
@@ -83,7 +97,7 @@ body {
   .button_slide {
     color: #FFF;
     border: 2px solid gainsboro;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 18px 36px;
     display: inline-block;
     font-family: "Lucida Console", Monaco, monospace;
