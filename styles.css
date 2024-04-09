@@ -37,7 +37,7 @@ body {
     font-size: larger;
 
   }
-  
+
   .details {
     grid-area: details;
     background-color: #f9f9f9;
@@ -62,6 +62,36 @@ body {
     border-radius: 5px;
     border-right: green 5px solid;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  }
+  .skill {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px 0 0 5px; /* rounded corners on the left side */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .skills .skill:hover .skill-level {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* slight shadow on hover */
   }
   
   .employment-history {
@@ -118,6 +148,10 @@ body {
     box-shadow: inset 0 0 0 50px gainsboro;
   }
 
-  h1, h2 {
+   h2 {
+    font-size: 1.5em;
     color: #333;
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #333
   }
