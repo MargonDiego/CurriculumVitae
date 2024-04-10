@@ -1,10 +1,11 @@
 body {
-    font-family: 'Lucida Console', sans-serif;
+    font-family:'Courier New', Courier, monospace;
+    font-size: medium;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #edede9;
     ;
   }
-  
+
   .resume {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -15,32 +16,39 @@ body {
       "hobbies education "
       "footer footer";
     gap: 20px;
-    background-color: #fff;
+    background-color: #eff1ed;
     padding: 80px;
     margin: 40px auto;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     max-width: 1024px;
     border-radius: 10px;
+    border-bottom: 20px solid #74c69d;
   }
   
   header {
     grid-area: header;
     text-align: center;
-    text-decoration-line: underline;
-    border-style:outset;
+    border-style: groove;
     border-width: 6px;
     border-color: green;
     border-top-left-radius: 40px;
-    border-bottom-left-radius: 25px;
     border-top-right-radius: 40px;
-    border-bottom-right-radius: 25px;
-    font-size: larger;
+    background-color: ivory;
+    margin-left: 280px;
+    margin-right: 280px;
+    transform: perspective(1500px) rotatex(0deg);
+    border-radius: 10%  ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 20px -15px;
+    transition: transform 2s ease 0s;
+      
+        &:hover {
+          transform: perspective(3000px) rotatex(360deg);
+        }
 
-  }
-
+  }     
   .details {
     grid-area: details;
-    background-color: #f9f9f9;
+    background-color: #f6fff8;
     padding: 20px;
     border-radius: 5px;
     border-style: dashed;
@@ -51,8 +59,14 @@ body {
     background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
-    border-right: green 5px solid;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-right: green 10px solid;
+    border-bottom: green 10px solid;
+    box-shadow: 14px 19px 2px -12px rgba(0, 0, 0, 0.2);
+  }
+  #personal-information{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 130%;
   }
   
   .skills {
@@ -60,9 +74,10 @@ body {
     background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
-    border-right: green 5px solid;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  }
+    border-right: green 10px solid;
+    border-bottom: green 10px solid;
+    box-shadow: 14px 19px 2px -12px rgba(0, 0, 0, 0.2);
+  } 
   .skill {
     margin-bottom: 20px;
   }
@@ -83,7 +98,7 @@ body {
   .skill-level {
     background-color: #333;
     height: 10px;
-    border-radius: 5px 0 0 5px; /* rounded corners on the left side */
+    border-radius: 5px 0 0 5px; 
     position: absolute;
     left: 0;
     top: 0;
@@ -91,21 +106,36 @@ body {
   }
   
   .skills .skill:hover .skill-level {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* slight shadow on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
   .employment-history {
     grid-area: employment;
-    background-color: #f9f9f9;
+    background-color: #f6fff8;
     padding: 20px;
     border-radius: 5px;
-    border-right: green 5px solid;
     border-style: dashed;
   }
+  #guitar{
+    display: grid;
+    place-items: center;
+    grid-template-areas: "";
+  }
+  img {
+    max-width: 160px;
+    max-height: 160px;
+    align-items: center;
+    
+  }
+  img:hover {
+    filter: grayscale(80%);
+    
+  }
+  
   
   .hobbies {
     grid-area: hobbies;
-    background-color: #f9f9f9;
+    background-color: #f6fff8;
     padding: 20px;
     border-radius: 5px;
     border-style: dashed;
@@ -116,8 +146,9 @@ body {
     background-color: #e7f1f1;
     padding: 20px;
     border-radius: 5px;
-    border-right: green 5px solid;
-       box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-right: green 10px solid;
+    border-bottom: green 10px solid;
+    box-shadow: 14px 19px 2px -12px rgba(0, 0, 0, 0.2);;
   }
   footer{ 
     grid-area: footer;
@@ -125,33 +156,43 @@ body {
   }
   
   .button_slide {
-    color: #FFF;
-    border: 2px solid gainsboro;
+    color: #74c69d;
+    border: 6px solid blanchedalmond;
     border-radius: 5px;
     padding: 18px 36px;
     display: inline-block;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "Lucida Console", monospace;
     font-size: 14px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 25px -32px;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    background-color: aliceblue;
+        &:hover {
+        transform: perspective(3000px) rotatex(360deg);
+      }
   }
   #outer {
-    width: 364px;
-    margin: 50px auto 0 auto;
+    width: 350px;
+    margin: 30px auto 0 auto;
     text-align: center;
   }
   .slide_left:hover {
-    box-shadow: inset 0 0 0 50px gainsboro;
+    box-shadow: inset 0 0 0 50px#74c69d;
   }
+  h1{
+    font: size 90px;
+    color: #333;
+    font-family:'Lucida Console', sans-serif;
 
+  }
    h2 {
     font-size: 1.5em;
     color: #333;
     margin-top: 0;
     padding-bottom: 5px;
-    border-bottom: 3px solid #333
+    border-bottom: 3px solid #333;
+    font-family: 'Lucida Console', sans-serif;
   }
