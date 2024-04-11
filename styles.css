@@ -8,9 +8,9 @@ body {
 
   .resume {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-areas: 
-      "header header"
+      "fotografia header"
       "details profile"
       "skills employment"
       "hobbies education "
@@ -27,6 +27,7 @@ body {
   
   header {
     grid-area: header;
+    max-height: 200px;
     text-align: center;
     border-style: groove;
     border-width: 6px;
@@ -34,17 +35,35 @@ body {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: ivory;
-    margin-left: 280px;
-    margin-right: 280px;
-    margin-bottom: 40px ;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    margin-top: 50px;
     transform: perspective(1500px) rotatex(0deg);
     border-radius: 10%  ;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 20px -15px;
     transition: transform 1s ease 0s;
+    
       
         &:hover {
           transform: perspective(3000px) rotatex(360deg);
         }
+    
+  }
+  .fotografia{
+    grid-area: fotografia;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 200px;
+  }
+  .fotografia img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 5px solid green;
+    border-style: outset;
 
   }     
   .details {
@@ -118,22 +137,27 @@ body {
     border-radius: 5px;
     border-style: dashed;
   }
-  #guitar{
-    display: grid;
-    place-items: center;
-    grid-template-areas: "";
-  }
-  img {
-    max-width: 160px;
-    max-height: 160px;
+  #guitar-employ{
+    display:flex;
     align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;   
     
   }
+  #guitar-employ img{
+    max-width: 180px;
+    max-height: 180px;
+  }
+
+    
   img:hover {
     filter: grayscale(80%);
     
   }
-  
+  #cafe{
+    transform: rotate(125deg);
+
+  }
   
   .hobbies {
     grid-area: hobbies;
@@ -151,6 +175,15 @@ body {
     border-right: green 10px solid;
     border-bottom: green 10px solid;
     box-shadow: 14px 19px 2px -12px rgba(0, 0, 0, 0.2);;
+  }
+  .guitar-edu{
+    display:flex;
+    align-items: center;
+    justify-content:center;   
+  }
+  .guitar-edu img{
+    max-width: 180px;
+    max-height: 180px;
   }
   footer{ 
     grid-area: footer;
