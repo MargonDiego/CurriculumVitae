@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Diego Martinez</title>
     <script src="https://kit.fontawesome.com/fba55dc263.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+      .neon-border {
+          box-shadow: 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 40px #ff0080, 0 0 60px #ff0080;
+      }
+      .text-outline {
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Outline effect using black shadow */
+      }
+  </style>
 </head>
 <body>
-  <div class="resume">
-    <header>
-        <h1>Diego Martinez</h1>
-    </header>
-    <div class="fotografia">
-        <img src="Diego.jpg" alt="Foto de una persona">    
+<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:grid-rows-5 md:gap-6"> <!-- Main CV structure -->
+  <!-- Header full width with neon border and custom background -->
+  <header class="md:col-span-2 bg-center bg-no-repeat bg-cover neon-border" style="background-image: url('./banner.webp');">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Diego Martinez</h1>
+        <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Professional Guitarist</p>
+        <img src="Diego.jpg" alt="Profile Photo" class="mx-auto w-32 h-32 rounded-full border-solid hover:border-dotted">    
     </div>
+  </header>    
     <aside class="details">
       <h2>DETAILS <i class="fa-solid fa-headphones"></i></h2>
       <p><strong>Email:</strong> dmartinez @guitarpro.com</p>
