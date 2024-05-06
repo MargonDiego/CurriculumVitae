@@ -6,103 +6,126 @@
     <title>Curriculum Diego Martinez</title>
     <script src="https://kit.fontawesome.com/fba55dc263.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-      .neon-border {
-          box-shadow: 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 40px #ff0080, 0 0 60px #ff0080;
-      }
-      .text-outline {
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Outline effect using black shadow */
-      }
-  </style>
+    <link href="tailwindstyle.css" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen grid grid-cols-1 gap-2 p-2 sm:grid-cols-1 sm:grid-rows-8 md:grid-cols-2 md:grid-rows-5 md:gap-4 lg:grid-cols-2 lg:grid-rows-6 lg:gap-4 xl:grid-cols-2 xl:grid-rows-6 xl:gap-4 2xl:grid-cols-2 2xl:grid-rows-6 2xl:gap-4">
-  <header class="bg-cover bg-center neon-border w-full col-span-2 h-auto md:h-full" style="background-image: url('./banner.webp');">
-    <div class="text-center flex-grow">
-        <h1 class="mb-4 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Diego Martinez</h1>
-        <p class="mb-8 text-lg lg:text-xl text-white text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Professional Guitarist</p>
-        <img src="Diego.jpg" alt="Profile Photo" class="w-1/3 h-1/3 mx-auto lg:w-1/3 lg:h-1/3 xl:w-1/3 xl:h-1/3 md:h-1/3 md:w-1/3 sm:h-1/3 sm:w-1/3 rounded-full">
+<body>
+  <div class="p-5 bg-gradient-to-r from-yellow-500 to-red-500">
+    <div class="grid grid-cols-1 gap-2 p-2 sm:grid-cols-1 sm:grid-rows-8 sm:gap-1 md:grid-cols-2 md:grid-rows-5 md:gap-2 lg:grid-cols-2 lg:grid-rows-6 lg:gap-4">
+      <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-2xl text-white md:col-span-2 lg:col-span-2 xl:col-span-2 2xl:col-span-2 transition-all">
+        <header class="bg-cover bg-center neon-border w-full col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-2 2xl:col-span-2" style="background-image: url('./banner.webp');">
+            <div class="text-center flex-grow">
+                <h1 class="mb-4 text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-white text-outline hover:text-neon transition-all" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Diego Martinez</h1>
+                <p class="mb-8 text-lg lg:text-xl text-white text-outline transition-all" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Professional Guitarist</p>
+                <img src="Diego.jpg" alt="Profile Photo" class="w-1/3 h-1/3 mx-auto lg:w-1/3 lg:h-1/3 xl:w-1/3 xl:h-1/3 md:h-1/3 md:w-1/3 sm:h-1/3 sm:w-1/3 rounded-full border-4 border-purple-500 shadow-2xl hover:shadow-2xl transition-all">
+            </div>
+        </header>
+      </div>
+      <div class="md:pt-24 lg:pt-32 bg-gradient-to-r from-blue-500 to-green-500 p-4 md:col-span-1 lg:col-span-1 transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="text-lg font-semibold hover:text-neon transition-all lg:text-3xl">DETAILS <i class="fa-solid fa-headphones hover:text-neon transition-all"></i></h2>
+            <p class="text-base lg:text-3xl">
+              <strong>Email:</strong> dmartinez@guitarpro.com <br>
+              <strong>Phone:</strong> +123 456 7890 <br>
+              <strong>Location:</strong> Providencia, Chile <br>
+              <strong>Website:</strong><a href="https://geektyper.com/shield/" class="text-blue-300 hover:text-neon transition-all">www.diegoguitar.com</a>
+            </p>
+        </div>
+      </div>
+      <div class="md:pt-24 lg:pt-12 bg-gradient-to-r from-purple-500 to-pink-500 p-6 md:col-span-1 lg:col-span-1 transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="text-lg font-semibold hover:text-neon transition-all lg:text-3xl">PROFILE <i class="fa-solid fa-user-pen hover:text-neon transition-all"></i></h2>
+            <pp class="text-base lg:text-3xl">Professional guitarist with over <strong>10 years of experience</strong> performing in various settings. Passionate about music composition, with a flair for creating emotive melodies that resonate with audiences. Skilled in multiple genres, especially <strong>Indie Rock.</strong></p>
+        </div>
+      </div>
+      <div class="md:pt-24 lg:pt-16 bg-gradient-to-r from-pink-500 to-purple-500 p-4 c md:col-span-2 lg:col-span-1 lg:row-span-1 transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center ">
+            <h2 class="text-lg font-semibold text-center hover:text-neon transition-all lg:text-3xl lg:pb-8">SKILLS <i class="fa-solid fa-guitar hover:text-neon transition-all"></i></h2>
+            <div class="grid grid-cols-2 gap-4">
+
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Guitar Performance</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
+                </div>
+              </div>
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Music Composition</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
+                </div>
+              </div>
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Music Theory</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 60%; height: 8px;"></div>
+                </div>
+              </div>
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Band Leadership</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 75%; height: 8px;"></div>
+                </div>
+              </div>
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Audio Production</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
+                </div>
+              </div>
+              <div class="skill mb-2">
+                <div class="skill-name text-center lg:text-3xl">Lyric composition</div>
+                <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                  <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="md:pt-14 lg:pt-16 bg-gradient-to-r from-green-500 to-blue-500 p-4 md:col-span-1 lg:col-span-1 row-span-1 transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="text-lg font-semibold text-center hover:text-neon transition-all lg:text-3xl lg:pb-8">EMPLOYMENT HISTORY <i class="fa-solid fa-book hover:text-neon transition-all"></i></h2>
+            <p class="text-base lg:text-2xl">
+              <strong>Lead Guitarist</strong> - Sunset Band | 2016 - Present<br>
+              <strong>Guitar Teacher</strong> - Aplaplac Music Academy | 2012 - 2016
+            </p>
+            <div id="guitar-employ" class="mt-4">
+              <img id="cafe" src="https://th.bing.com/th/id/R.96fcc57ba72474b3850c2d0fd7590338?rik=RuqvLPiceMc%2fag&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fguitar-png-acoustic-guitar-png-1200.png&ehk=PbcJTfqBNYu5hE1YUT6ZpYsRMdGbGJE2I5L5aA3tIQE%3d&risl=&pid=ImgRaw&r=0" alt="Acoustic Guitar" class="w-64 h-auto">
+            </div>
+        </div>
+      </div>
+      <div class="md:pt-24 lg:pt-22  bg-gradient-to-r from-purple-500 to-pink-500 p-4 md:col-span-1 lg:col-span-1  transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center">
+            <h2 class="text-lg font-semibold text-center hover:text-neon transition-all lg:text-3xl lg:pb-14">HOBBIES <i class="fa-brands fa-square-web-awesome-stroke hover:text-neon transition-all"></i></h2>
+                <p class="text-base lg:text-2xl">
+                  Composing original songs<br>
+                  Attending live music events<br>
+                  Collecting vintage guitars<br>
+                  Recording music tutorials
+                </p>
+        </div>
+      </div>
+      <div class="md:pt-12 lg:pt-12 bg-gradient-to-r from-pink-500 to-purple-500 p-4 md:col-span-2 lg:col-span-1  transition-all rounded-lg shadow-2xl">
+        <div class="flex flex-col justify-center items-center ">
+            <h2 class="text-lg font-semibold text-center hover:text-neon transition-all lg:text-3xl lg:p-12">EDUCATION <i class="fa-solid fa-school-flag hover:text-neon transition-all"></i></h2>
+            <p class="text-base lg:text-2xl">
+            <strong>Bachelor of Music</strong> - Lucho Jara Music Academy | 2008 - 2012<br>
+            Major in Guitar Performance
+            </p>
+            <div class="guitar-edu mt-4">
+              <img id="negra" src="https://pngimg.com/uploads/guitar/guitar_PNG3347.png" alt="Electric Guitar" class="w-64 h-auto">
+            </div>
+        </div>  
+      </div>
+      <div class="bg-teal-300  md:col-span-2 lg:col-span-2 xl:col-span-2 2xl:col-span-2 transition-all">
+        <footer class="pt-5 bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-xl text-white text-center sm:col-span-1 md:col-span-2 lg:col-span-2 shadow-2xl">
+            <div class="flex flex-col justify-center items-center">
+            <div><a href="https://github.com/MargonDiego/CurriculumVitae" class="bg-white text-purple-500 px-4 py-2 rounded-lg hover:bg-purple-500 hover:text-white transition-all"><i class="fa-brands fa-github hover:text-neon transition-all"></i>GitHub Diego Martinez<i class="fa-brands fa-github hover:text-neon transition-all"></i></a></div>
+            </div>
+        </footer>
+      </div>
     </div>
-  </header>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg col-span-2 md:col-span-1 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold text-white">DETAILS <i class="fa-solid fa-headphones"></i></h2>
-    <p class="text-white"><strong>Email:</strong> dmartinez@guitarpro.com</p>
-    <p class="text-white"><strong>Phone:</strong> +123 456 7890</p>
-    <p class="text-white"><strong>Location:</strong> Providencia, Chile</p>
-    <p class="text-white"><strong>Website:</strong><a href="https://geektyper.com/shield/" class="text-blue-300 hover:text-blue-200">www.diegoguitar.com</a></p>
   </div>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg text-white col-span-2 md:col-span-1 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold">PROFILE <i class="fa-solid fa-user-pen"></i></h2>
-    <p>Professional guitarist with over <strong>10 years of experience</strong> performing in various settings. Passionate about music composition, with a flair for creating emotive melodies that resonate with audiences. Skilled in multiple genres, especially <strong>Indie Rock.</strong></p>
-  </div>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg text-white col-span-2 md:col-span-2 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold text-center mb-4">SKILLS <i class="fa-solid fa-guitar"></i></h2>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Guitar Performance</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
-        </div>
-      </div>
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Music Composition</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
-        </div>
-      </div>
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Music Theory</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 60%; height: 8px;"></div>
-        </div>
-      </div>
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Band Leadership</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 75%; height: 8px;"></div>
-        </div>
-      </div>
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Audio Production</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
-        </div>
-      </div>
-      <div class="skill mb-2">
-        <div class="skill-name text-center">Lyric composition</div>
-        <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-          <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white col-span-2 md:col-span-1 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold text-center">EMPLOYMENT HISTORY <i class="fa-solid fa-book"></i></h2>
-    <p><strong>Lead Guitarist</strong> - Sunset Band | 2016 - Present</p>
-    <p><strong>Guitar Teacher</strong> - Aplaplac Music Academy | 2012 - 2016</p>
-    <div id="guitar-employ" class="mt-4">
-        <img id="cafe" src="https://th.bing.com/th/id/R.96fcc57ba72474b3850c2d0fd7590338?rik=RuqvLPiceMc%2fag&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fguitar-png-acoustic-guitar-png-1200.png&ehk=PbcJTfqBNYu5hE1YUT6ZpYsRMdGbGJE2I5L5aA3tIQE%3d&risl=&pid=ImgRaw&r=0" alt="Acoustic Guitar">
-    </div>
-  </div>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white col-span-2 md:col-span-1 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold text-center">HOBBIES <i class="fa-brands fa-square-web-awesome-stroke"></i></h2>
-    <ul>
-        <li><p>Composing original songs</p></li>
-        <li><p>Attending live music events</p></li>
-        <li><p>Collecting vintage guitars</p></li>
-        <li><p>Recording music tutorials</p></li>
-    </ul>
-  </div>
-  <div class="flex-grow bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white col-span-2 md:col-span-2 md:h-full lg:h-full xl:h-full 2xl:h-full">
-    <h2 class="text-lg font-semibold text-center">EDUCATION <i class="fa-solid fa-school-flag"></i></h2>
-    <p><strong>Bachelor of Music</strong> - Lucho Jara Music Academy | 2008 - 2012</p>
-    <p>Major in Guitar Performance</p>
-    <div class="guitar-edu mt-4">
-        <img id="negra" src="https://pngimg.com/uploads/guitar/guitar_PNG3347.png" alt="Electric Guitar">
-    </div>
-  </div>
-  <footer class="grid-cols-1 gap-1 p-2 bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-xl text-white text-center lg:col-span-2 xl:col-span-2 2xl:col-span-2 md:col-span-2 sm:col-span-1 md:h-32 lg:h-32 xl:h-32 2xl:h-32">
-    <div class="mx-auto"><a href="https://github.com/MargonDiego/CurriculumVitae" class="bg-white text-purple-500 px-4 py-2 rounded-lg hover:bg-purple-500 hover:text-white transition duration-300 ease-in-out"><i class="fa-brands fa-github"></i>GitHub Diego Martinez<i class="fa-brands fa-github"></i></a></div>
-  </footer>
 </body>
 </html>
+
+
