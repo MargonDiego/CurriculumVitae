@@ -17,104 +17,108 @@
   </style>
 </head>
 <body>
-<div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:grid-rows-5 md:gap-6"> <!-- Main CV structure -->
-  <!-- Header full width with neon border and custom background -->
-  <header class="md:col-span-2 bg-center bg-no-repeat bg-cover neon-border" style="background-image: url('./banner.webp');">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32">
+<div class="grid grid-cols-1 gap-2 p-2  lg:grid-cols-2 lg:grid-rows-6 xl:grid-cols-2 xl:grid-rows-6 2xl:grid-cols-2 2xl:grid-rows-6 sm:grid-cols-1 sm:grid-rows-8 md:grid-cols-2 md:grid-rows-5 ">
+  <header class="bg-cover neon-border w-full md:w-auto lg:col-span-2 xl:col-span-2 2xl:col-span-2 md:col-span-2 sm:col-span-1 " style="background-image: url('./banner.webp');">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-32 sm:text-center">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Diego Martinez</h1>
         <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-outline" style="font-family: 'Orbitron', sans-serif; color: #ff00ff;">Professional Guitarist</p>
         <img src="Diego.jpg" alt="Profile Photo" class="mx-auto w-32 h-32 rounded-full ">    
     </div>
-  </header>  
-  <aside class="details bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg">
+  </header>
+  <div class="grid-cols-1 gap-1 p-2 lg:row-start-2 xl:row-start-2 2xl:row-start-2 md:row-start-2 sm:col-span-1 w-full md:w-auto bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg">
     <h2 class="text-lg font-semibold text-white">DETAILS <i class="fa-solid fa-headphones"></i></h2>
     <p class="text-white"><strong>Email:</strong> dmartinez@guitarpro.com</p>
     <p class="text-white"><strong>Phone:</strong> +123 456 7890</p>
     <p class="text-white"><strong>Location:</strong> Providencia, Chile</p>
     <p class="text-white"><strong>Website:</strong><a href="https://geektyper.com/shield/" class="text-blue-300 hover:text-blue-200">www.diegoguitar.com</a></p>
-  </aside>
+  </div>
+  <div class="grid-cols-1 gap-1 p-2 lg:row-start-2 xl:row-start-2 2xl:row-start-2 md:row-start-2 sm:col-span-1 w-full md:w-auto">
   <section class="profile bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg text-white">
     <h2 class="text-lg font-semibold">PROFILE <i class="fa-solid fa-user-pen"></i></h2>
     <div id="personal-information">
         <p>Professional guitarist with over <strong>10 years of experience</strong> performing in various settings. Passionate about music composition, with a flair for creating emotive melodies that resonate with audiences. Skilled in multiple genres, especially <strong>Indie Rock.</strong></p>
     </div>
   </section>
-
-      <div class="col-span-2">
-        <section class="skills bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg text-white">
-            <h2 class="text-lg font-semibold text-center mb-4">SKILLS <i class="fa-solid fa-guitar"></i></h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="skill mb-2">
-                    <div class="skill-name text-center">Guitar Performance</div>
-                    <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                        <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="skill mb-2">
-                    <div class="skill-name text-center">Music Composition</div>
-                    <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                        <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="skill mb-2">
-                    <div class="skill-name text-center">Music Theory</div>
-                    <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                        <div class="skill-level bg-green-500" style="width: 60%; height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="skill mb-2">
-                    <div class="skill-name text-center">Band Leadership</div>
-                    <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                        <div class="skill-level bg-green-500" style="width: 75%; height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="skill mb-2">
-                    <div class="skill-name text-center">Audio Production</div>
-                    <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                        <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
-                    </div>
-                </div>
-                <div class="skill mb-2">
-                  <div class="skill-name text-center">Lyric composition</div>
-                  <div class="skill-bar bg-gray-300 rounded overflow-hidden">
-                      <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
-                  </div>
-                </div>
+  </div>  
+  <div class="grid-cols-1 gap-1 p-2 lg:col-span-2 xl:col-span-2 2xl:col-span-2 md:col-span-2 sm:col-span-1 w-full md:w-auto">
+    <section class="skills bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-lg text-white">
+      <h2 class="text-lg font-semibold text-center mb-4">SKILLS <i class="fa-solid fa-guitar"></i></h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="skill mb-2">
+            <div class="skill-name text-center">Guitar Performance</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
               </div>
-        </section>
-    </div>
-      
-    <section class="employment-history">
-      <h2>EMPLOYMENT HISTORY <i class="fa-solid fa-book"></i></h2>
-      <p><strong>Lead Guitarist</strong> - Sunset Band | 2016 - Present</p>
-      <p><strong>Guitar Teacher</strong> - Aplaplac Music Academy | 2012 - 2016</p>
-      <div id="guitar-employ">
-        
-        <img id="cafe" src="https://th.bing.com/th/id/R.96fcc57ba72474b3850c2d0fd7590338?rik=RuqvLPiceMc%2fag&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fguitar-png-acoustic-guitar-png-1200.png&ehk=PbcJTfqBNYu5hE1YUT6ZpYsRMdGbGJE2I5L5aA3tIQE%3d&risl=&pid=ImgRaw&r=0">
-      </div> 
+          </div>
+            <div class="skill mb-2">
+              <div class="skill-name text-center">Music Composition</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
+              </div>
+            </div>
+            <div class="skill mb-2">
+              <div class="skill-name text-center">Music Theory</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 60%; height: 8px;"></div>
+              </div>
+            </div>
+            <div class="skill mb-2">
+              <div class="skill-name text-center">Band Leadership</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 75%; height: 8px;"></div>
+              </div>
+            </div>
+            <div class="skill mb-2">
+              <div class="skill-name text-center">Audio Production</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 80%; height: 8px;"></div>
+              </div>
+            </div>
+            <div class="skill mb-2">
+              <div class="skill-name text-center">Lyric composition</div>
+              <div class="skill-bar bg-gray-300 rounded overflow-hidden">
+                <div class="skill-level bg-green-500" style="width: 90%; height: 8px;"></div>
+              </div>
+            </div>
+        </div>
     </section>
-    <section class="hobbies">
-      <h2>HOBBIES <i class="fa-brands fa-square-web-awesome-stroke"></i></h2>
-      <ul>
+  </div>
+  <div class="grid-cols-1 gap-1 p-2 lg:row-start-4 xl:row-start-4 2xl:row-start-4 md:row-start-3 sm:col-span-1 w-full md:w-auto">
+  <section class="employment-history bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white mb-4">
+    <h2 class="text-lg font-semibold text-center">EMPLOYMENT HISTORY <i class="fa-solid fa-book"></i></h2>
+    <p><strong>Lead Guitarist</strong> - Sunset Band | 2016 - Present</p>
+    <p><strong>Guitar Teacher</strong> - Aplaplac Music Academy | 2012 - 2016</p>
+    <div id="guitar-employ" class="mt-4">
+        <img id="cafe" src="https://th.bing.com/th/id/R.96fcc57ba72474b3850c2d0fd7590338?rik=RuqvLPiceMc%2fag&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fguitar-png-acoustic-guitar-png-1200.png&ehk=PbcJTfqBNYu5hE1YUT6ZpYsRMdGbGJE2I5L5aA3tIQE%3d&risl=&pid=ImgRaw&r=0" alt="Acoustic Guitar">
+    </div> 
+  </section>
+  </div>
+  <div class="grid-cols-1 gap-1 p-2 lg:row-start-4 xl:row-start-4 2xl:row-start-4 md:row-start-3 sm:col-span-1 w-full md:w-auto">
+  <section class="hobbies bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white mb-4">
+    <h2 class="text-lg font-semibold text-center">HOBBIES <i class="fa-brands fa-square-web-awesome-stroke"></i></h2>
+    <ul>
         <li><p>Composing original songs</p></li>
         <li><p>Attending live music events</p></li>
         <li><p>Collecting vintage guitars</p></li>
         <li><p>Recording music tutorials</p></li>
-      </ul>
-    </section>
-    <section class="education">
-      <h2>EDUCATION <i class="fa-solid fa-school-flag"></i></h2>
-      <p><strong>Bachelor of Music</strong> - Lucho Jara Music Academy | 2008 - 2012</p>
-      <p>Major in Guitar Performance</p>
-    <div class="guitar-edu">
-        <img id="negra" src="https://pngimg.com/uploads/guitar/guitar_PNG3347.png">
-    </div>
-    </section>
-    <footer>
-        <div id="outer">
-            <div class="button_slide slide_left"><a href="https://github.com/MargonDiego/CurriculumVitae"><i class="fa-brands fa-github"></i>GitHub Diego Martinez<i class="fa-brands fa-github"></i></a></div>
-        </div>
-    </footer>
+    </ul>
+  </section>
   </div>
+  <div class="grid-cols-1 gap-1 p-2 lg:col-span-2 xl:col-span-2 2xl:col-span-2 md:col-span-2 sm:col-span-1 w-full md:w-auto">
+  <section class="education bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-5 rounded-lg shadow-xl text-white">
+    <h2 class="text-lg font-semibold text-center">EDUCATION <i class="fa-solid fa-school-flag"></i></h2>
+    <p><strong>Bachelor of Music</strong> - Lucho Jara Music Academy | 2008 - 2012</p>
+    <p>Major in Guitar Performance</p>
+    <div class="guitar-edu mt-4">
+        <img id="negra" src="https://pngimg.com/uploads/guitar/guitar_PNG3347.png" alt="Electric Guitar">
+    </div>
+  </section>
+  </div>
+  <footer class="grid-cols-1 gap-1 p-2 bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-lg shadow-xl text-white text-center lg:col-span-2 xl:col-span-2 2xl:col-span-2 md:col-span-2 sm:col-span-1">
+    <div>
+        <div class="mx-auto button_slide slide_left"><a href="https://github.com/MargonDiego/CurriculumVitae" class="bg-white text-purple-500 px-4 py-2 rounded-lg hover:bg-purple-500 hover:text-white transition duration-300 ease-in-out"><i class="fa-brands fa-github"></i>GitHub Diego Martinez<i class="fa-brands fa-github"></i></a></div>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
